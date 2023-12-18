@@ -1,4 +1,45 @@
+body {
+  min-height: 100vh;
+}
+
 .logo {
   max-width: 4rem;
 }
 
+label {
+  color: darkgray;
+  font-size: .8rem;
+  display: block;
+  margin-top: 1rem;
+}
+
+.flex {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-container.card {
+  max-width: 20em !important;
+  padding: 2em 2em;
+}
+
+.card {
+  max-width: 50%;
+  padding: 1rem 1rem;
+  background-color: #f7f7f7;
+  border-radius: 2px;
+  moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.divimg {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-img-card {
+  width: 25%;
+  min-width: 40px;
+}

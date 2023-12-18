@@ -10,16 +10,18 @@ import BoardUser from './components/BoardUser';
 import BoardModerator from './components/BoardModerator';
 import BoardAdmin from './components/BoardAdmin';
 
+import * as AuthService from './services/auth.service';
+
 function App() {
 
   const logOut = () => {
-
+    AuthService.logout();
   };
 
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
           <Link to={"/"} className="navbar-brand">
             <img className='logo' src={Logo} alt="logo" />
           </Link>
@@ -91,7 +93,6 @@ function App() {
         <Route path="/mod" element={<BoardModerator />} />
         <Route path="/admin" element={<BoardAdmin />} />
       </Routes>
-
     </>
   )
 }

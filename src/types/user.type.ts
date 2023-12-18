@@ -5,3 +5,4 @@ export default interface IUser {
   password: string,
   roles?: Array<string>
 }
+
