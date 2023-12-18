@@ -47,9 +47,9 @@ const Register: React.FC = () => {
 
     register(username, email, password).then(
       (res) => {
-        console.log("res : " , res);
-        console.log("res.data : " , res.data);
-        console.log("res.data.body.message : " ,res.data.body.message);
+        console.log("res : ", res);
+        console.log("res.data : ", res.data);
+        console.log("res.data.body.message : ", res.data.body.message);
         setMessage(res.data.body.message);
         setSuccessful(true);
       },
@@ -61,8 +61,8 @@ const Register: React.FC = () => {
           error.message ||
           error.toString();
 
-        setMessage(resMessage);
         setSuccessful(false);
+        setMessage(resMessage);
       }
     );
   };
