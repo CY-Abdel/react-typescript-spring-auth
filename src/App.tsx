@@ -14,6 +14,7 @@ import * as AuthService from './services/auth.service';
 import { useEffect, useState } from 'react';
 import IUser from './types/user.type';
 import eventBus from './common/EventBus';
+import Parallax from './components/Parallax/Parallax';
 
 function App() {
   const [showModeratorBoard, setShowModeratorBoard] = useState<boolean>(false);
@@ -59,6 +60,12 @@ function App() {
             <li className="nav-item">
               <Link to={"/home"} className='nav-link'>
                 Home
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to={"/parallax"} className='nav-link'>
+                Parallax
               </Link>
             </li>
 
@@ -123,6 +130,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/parallax" element={<Parallax />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />

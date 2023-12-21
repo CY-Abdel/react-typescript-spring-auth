@@ -16,7 +16,7 @@ const Login : React.FC<Props> = () => {
 
   const initialValues: {
     username: string;
-    password: string;
+    password: string; 
   } = {
     username: "",
     password: ""

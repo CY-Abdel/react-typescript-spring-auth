@@ -14,7 +14,7 @@ const Profile: React.FC = () => {
         <div className="container py-5">
           <header>
             <h3>
-              <strong>{currentUser.username}</strong> Profile
+              <strong>{currentUser.username}s</strong> Profile
             </h3>
           </header>
 
