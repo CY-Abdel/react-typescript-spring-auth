@@ -27,9 +27,7 @@ const Profile: React.FC = () => {
             <strong>Id:</strong> {currentUser.id}
           </p>
 
-          <p>
-            <strong>Email:</strong> {currentUser.email}
-          </p>
+          <p><strong>Email:</strong>{currentUser.email}</p>
 
           <strong>Roles:</strong>
           <ul>

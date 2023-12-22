@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+
+  color: white;
+}
+
+.div1 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  color: rgb(0, 0, 0, .7);
+}
+
+.parallax-1 {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 255, 189);
+  background: radial-gradient(circle, rgba(0, 255, 189, 0.22629681755514708) 63%, rgba(3, 205, 75, 0.5820391144739145) 79%, rgba(0, 36, 15, 0.7949242685355392) 100%);
+
+  position: relative;
+  width: 100%;
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: inherit;
+    background: url('../../assets/Paris.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+}
+
+.parallax-2 {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 255, 189);
+  background: radial-gradient(circle, rgba(0, 255, 189, 0.22629681755514708) 63%, rgba(3, 205, 75, 0.5820391144739145) 79%, rgba(0, 36, 15, 0.7949242685355392) 100%);
+
+  position: relative;
+  width: 100%;
+
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: inherit;
+    /* background: url('../../assets/Paris.jpg') no-repeat; */
+    background: url('../../assets/bansky.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+
+  }
+}
+
+.parallax-3 {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 255, 189);
+  background: radial-gradient(circle, rgba(0, 255, 189, 0.22629681755514708) 63%, rgba(3, 205, 75, 0.5820391144739145) 79%, rgba(0, 36, 15, 0.7949242685355392) 100%);
+
+  position: relative;
+  width: 100%;
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: inherit;
+    background: url('../../assets/wp4600617.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+}
+
+/* .parallax-1 {
+  background: url('../assets/bansky.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+} */
+
+/* .parallax-2 {
+  background: url('../assets/Nature.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+} */
+
+/* .parallax-3 {
+  background: url('../assets/wp4600617.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+} */
+
+.parallax-inner {
+  padding: 5% 0;
+}
+
+.div1 h2 {
+  font-size: 2rem;
+  color: rgba(0, 222, 59, 0.747);
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 2rem 0;
+}
+
+.div1 P {
+  font-size: 1rem;
+  color: whitesmoke;
+  text-align: justify;
+  line-height: 1.5rem;
+  margin: 0 3.5rem 2.8rem;
+}
