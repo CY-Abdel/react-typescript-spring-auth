@@ -24,28 +24,6 @@ h1 {
 .parallax-1 {
   margin: 0;
   padding: 0;
-  background: rgb(0,255,189);
-  background: radial-gradient(circle, rgba(0,255,189,0.22629681755514708) 63%, rgba(3,205,75,0.5820391144739145) 79%, rgba(0,36,15,0.7949242685355392) 100%);
-
-  position: relative;
-  width: 100%;
-
-  &:after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: inherit;
-    background: url('../../assets/bansky.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    z-index: -1;
-  }
-}
-
-.parallax-2 {
-  margin: 0;
-  padding: 0;
   background: rgb(0, 255, 189);
   background: radial-gradient(circle, rgba(0, 255, 189, 0.22629681755514708) 63%, rgba(3, 205, 75, 0.5820391144739145) 79%, rgba(0, 36, 15, 0.7949242685355392) 100%);
 
@@ -62,6 +40,30 @@ h1 {
     background-position: center;
     background-attachment: fixed;
     z-index: -1;
+  }
+}
+
+.parallax-2 {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 255, 189);
+  background: radial-gradient(circle, rgba(0, 255, 189, 0.22629681755514708) 63%, rgba(3, 205, 75, 0.5820391144739145) 79%, rgba(0, 36, 15, 0.7949242685355392) 100%);
+
+  position: relative;
+  width: 100%;
+
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: inherit;
+    /* background: url('../../assets/Paris.jpg') no-repeat; */
+    background: url('../../assets/bansky.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+
   }
 }
 
@@ -109,7 +111,7 @@ h1 {
 } */
 
 .parallax-inner {
-  padding: 8% 0;
+  padding: 5% 0;
 }
 
 .div1 h2 {
@@ -128,4 +130,3 @@ h1 {
   line-height: 1.5rem;
   margin: 0 3.5rem 2.8rem;
 }
-

@@ -14,7 +14,7 @@ const Profile: React.FC = () => {
         <div className="container py-5">
           <header>
             <h3>
-              <strong>{currentUser.username}s</strong> Profile
+              <strong>{currentUser.username}</strong> Profile
             </h3>
           </header>
 
@@ -27,9 +27,7 @@ const Profile: React.FC = () => {
             <strong>Id:</strong> {currentUser.id}
           </p>
 
-          <p>
-            <strong>Email:</strong> {currentUser.email}
-          </p>
+          <p><strong>Email:</strong>{currentUser.email}</p>
 
           <strong>Roles:</strong>
           <ul>

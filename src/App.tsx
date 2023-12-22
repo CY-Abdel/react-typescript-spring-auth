@@ -123,7 +123,6 @@ function App() {
               </li>
             </div>
           )}
-
         </nav>
       </div>
 
@@ -138,6 +137,7 @@ function App() {
         <Route path="/mod" element={<BoardModerator />} />
         <Route path="/admin" element={<BoardAdmin />} />
       </Routes>
+
     </>
   )
 }

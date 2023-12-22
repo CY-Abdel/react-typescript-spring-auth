@@ -74,7 +74,7 @@ const Login : React.FC<Props> = () => {
           <Form>
             <div className="form-group">
               <label htmlFor="username">Nom</label>
-              <Field name="username" type="text" className="form-control" />
+              <Field id="username" name="username" type="text" className="form-control" />
               <ErrorMessage
                 name="username"
                 component="div"
@@ -83,7 +83,7 @@ const Login : React.FC<Props> = () => {
             </div>
             <div className="form-group">
               <label htmlFor="password">Mot de passe</label>
-              <Field name="password" type="password" className="form-control" />
+              <Field id='password' name="password" type="password" className="form-control" />
               <ErrorMessage
                 name="password"
                 component="div"
