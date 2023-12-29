@@ -1,0 +1,117 @@
+/* import font family for number */
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap');
+
+.body2 {
+  margin: 0;
+  padding: 0;
+  min-height: 90vh;
+  /* background-color: whitesmoke; */
+  /* color: rgba(0, 222, 59, 0.747); */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.skill {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  /* border: 1px whitesmoke solid; */
+  /* background-color: rgb(0, 255, 189);
+  border-radius: 5px; */
+}
+
+.outer {
+  width: 10rem;
+  height: 10rem;
+  width: 160px;
+  height: 160px;
+  padding: 1rem;
+  padding: 20px;
+  /* border: 1px solid whitesmoke; */
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(225, 255, 255, 0.7);
+  /* box-shadow: 6px 6px 10px -1px rgba(225, 222, 222, 0.15), -6px -6px 10px -1px rgba(225, 222, 222, 0.7); */
+}
+
+.inner {
+  width: 10rem;
+  width: 120px;
+  height: 120px;
+  /* border: 1px solid rgba(3, 205, 75, 0.6) ; */
+  border-radius: 50%;
+
+  /* aligner le chiffre */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number {
+  color: #d5d6d1d9;
+  font-weight: 600;
+  font-family: 'Stardos Stencil';
+  font-size: 2rem;
+}
+
+.circle {
+  fill: none;
+  stroke: url(#gradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+}
+
+.circle.circle1 {
+  animation: anim 1.5s linear forwards;
+}
+
+.circle.circle2 {
+  animation: anim2 1.5s linear forwards;
+}
+
+.circle.circle3 {
+  animation: anim3 1.5s linear forwards;
+}
+
+@keyframes anim {
+  to {
+    stroke-dashoffset: 135.5; /* Ajustez ces valeurs en fonction de vos besoins */
+  }
+}
+
+@keyframes anim2 {
+  to {
+    stroke-dashoffset: 80.5;
+  }
+}
+
+@keyframes anim3 {
+  to {
+    stroke-dashoffset: 175.5;
+  }
+}
+
+
+
+
+
+.svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -15,6 +15,7 @@ import { useEffect, useState } from 'react';
 import IUser from './types/user.type';
 import eventBus from './common/EventBus';
 import Parallax from './components/Parallax/Parallax';
+import ProgressBar from './components/ProgressBar/ProgressBar';
 
 function App() {
   const [showModeratorBoard, setShowModeratorBoard] = useState<boolean>(false);
@@ -22,7 +23,7 @@ function App() {
 
   const [currentUser, setCurrentUser] = useState<IUser | undefined>(undefined);
 
-  useEffect (() => {
+  useEffect(() => {
     const user = AuthService.getCurrentUser();
 
     if (user) {
@@ -66,6 +67,12 @@ function App() {
             <li className="nav-item">
               <Link to={"/parallax"} className='nav-link'>
                 Parallax
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to={"/progressbar"} className='nav-link'>
+                ProgressBar
               </Link>
             </li>
 
@@ -130,6 +137,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/parallax" element={<Parallax />} />
+        <Route path="/progressbar" element={<ProgressBar />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
